@@ -11,5 +11,12 @@ class CursoSchema(SCBaseModel):
     class Config:
         orm_mode = True
 
+class CursoSchemaCreate(SCBaseModel):
+    titulo: str
+    aulas: int
+    horas: int
+   
+    class Config:
+        orm_mode = True
 
 #posso criar quantos schemas eu quiser, para diferentes finalidades, num mesmo model
